@@ -13,3 +13,5 @@ Problem 3:
           The largest prime factor of the number 600851475143.
 Problem 4:
           The largest palindrome made from the product of two 3-digit numbers.
+Problem 5:
+          What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?

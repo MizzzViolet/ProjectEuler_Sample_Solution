@@ -95,7 +95,24 @@ long largetPalindrome(){
     }
     return r;
 }
-
+/*PROBLEM 5
+ What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+ */
+int divisible(){
+    int r = 0,j;
+    for(int i = 1; 1;i++){
+        for(j = 1; j <= 20; j++){
+            if(i%j!=0){
+                break;
+            }
+        }
+        if(j>20){
+            r = i;
+            break;
+        }
+    }
+    return r;
+}
 int main(int argc, const char * argv[]) {
     int r = multiple();
     long even = sum_even_fib();
@@ -105,5 +122,7 @@ int main(int argc, const char * argv[]) {
     printf("The largest prime factor of the number 600851475143:\n%ld\n",prime);
     long rst = largetPalindrome();
     printf("The largest palindrome made from the product of two 3-digit numbers:\n%ld\n", rst);
+    int div = divisible();
+    printf("The smallest positive number that is evenly divisible by all of the numbers from 1 to 20:\n%d",div);
     return 0;
 }
